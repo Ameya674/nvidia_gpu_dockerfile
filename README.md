@@ -23,6 +23,6 @@ Create the container using the following command:
 Enter and use the container using the following command:
 
 ```
-docker exec -it <container_name> /bin/bash
+docker exec -it --gpus all --name <container_name> /bin/bash
 ```
 This command allows you to enter the container, and the ```/bin/bash``` at the end permits access via the shell.
